@@ -38,7 +38,7 @@ while True:
     
                 print("Water tick:", datetime.datetime.now())
                 
-                monitor = cronitor.Monitor('water-tick')
+                monitor = cronitor.Monitor('VF: Water Tick')
 
                 # send a heartbeat event with a message
                 monitor.ping(message="Water tick received", metrics={'count': count, 'error_count': errors})
